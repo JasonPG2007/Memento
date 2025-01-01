@@ -13,7 +13,7 @@ LABEL maintainer=master
 WORKDIR /usr/local/tomcat
 
 # Copy file WAR vào thư mục webapps của Tomcat
-COPY --from=maven /usr/src/app/target/Memento_a-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=maven /usr/src/app/target/Memento_A-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port 8080
 EXPOSE 8080
