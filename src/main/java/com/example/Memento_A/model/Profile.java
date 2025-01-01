@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.util.List;
 
 @Entity
@@ -17,8 +17,8 @@ public class Profile {
     private String grade;
     private String school;
     private String city;
-    private ZonedDateTime createdAt;
-    private ZonedDateTime updatedAt;
+    private OffsetDateTime createdAt;
+    private OffsetDateTime updatedAt;
 
     // Relationship
     @OneToOne(mappedBy = "profile")

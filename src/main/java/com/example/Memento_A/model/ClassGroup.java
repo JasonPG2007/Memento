@@ -15,7 +15,6 @@ public class ClassGroup {
     private int accountId;
     private String groupName;
     private String description;
-    @Column(nullable = true)
     private int maxMembers;
     private ZonedDateTime createdAt;
     private ZonedDateTime updatedAt;
